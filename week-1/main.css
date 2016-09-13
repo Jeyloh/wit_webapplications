@@ -1,0 +1,17 @@
+
+
+
+div.menubar a:link, div.menubar a:visited
+{
+font-weight:bold;
+color:#FFFFFF;
+/*   background-color:#FF0000;           REMOVED  */
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+#menubar {
+	color: red;
+}
