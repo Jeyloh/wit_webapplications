@@ -44,7 +44,13 @@ This one means that it has to be a screen AND the resultution must be over 480px
 
 /*Rules for when the screen is LARGER than 660px (Tablets and Computers)*/
 @media screen and (min-width: 660px){
-	
+	header #logo {
+		float:left;
+	}
+
+	header nav {
+		float: right;
+	}
 
 }
 
