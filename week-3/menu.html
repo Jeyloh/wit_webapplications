@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House Menu</title>
+    <link rel="stylesheet" type="text/css" href="javajam.css">
+    <script>
+        /* Toggle the "active" and "show" classes when the user click an element related to the class "accordion"
+        */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+    </script>
+<meta charset="utf-8">
+</head>
+<body>
+<div id="centered-main">
+<header>
+    <h1>JavaJam Coffee House</h1>
+</header>
+<nav><b>
+    <button type="button"><a href="index.html">Home</a></button>
+    <button type="button"><a href="menu.html">Menu</a></button>
+    <button type="button"><a href="music.html">Music</a></button>
+    <button type="button"><a href="jobs.html">Jobs</a></button>
+    </b></nav>
+<main>
+    <h2>Coffee at JavaJam</h2>
+
+    <button class="accordion"><strong>Just Java</strong></button>
+    <div class="panel">
+        <p>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $2.00</p>
+    </div>
+    <button class="accordion"><strong>Cafe au Lait</strong></button>
+    <div class="panel">
+        <p>House blended coffee infused into a smooth, steamed milk.<br>Single $2.00 Double $3.00</p>
+    </div>
+    <button class="accordion"><strong>Iced Cappuccino</strong></button>
+    <div class="panel">
+        <p>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>Single $4.75 Double $5.75</p>
+    </div>
+</main>
+<footer>
+    <small><i>Copyright &copy; 2016 JavaJam Coffee House<br>
+    <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </i></small>
+</footer>
+</div>
+</body>
+</html>
