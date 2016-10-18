@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+<title>A More Complex Form with JavaScript Validation</title>
+
+
+<script> 
+// insert javascript code that will allow you to validate each element of the form below.
+function isready(theform) {
+
+	var valid = true;
+
+	if(theform.contact_name.value="") || (theform.contact_name.value=null)) {
+		alert("Please enter your name");
+		theform.contact_name.value="";
+		document.contact_form.contact_name.focus();
+		valid=false;
+	}
+	if((theform.gender.value="") || (theform.gender.value=null)) {
+		alert("Please enter your gender");
+		theform.gender.value="";
+		document.contact_form.gender.focus();
+		valid=false;
+	}
+	if((theform.age.value="")||(theform.age.value=null)) {
+		alert("Please enter your age");
+		theform.age.value="";
+		document.contact_form.age.focus();
+		valid=false;
+	}
+	if((theform.terms.value="")||(theform.terms.value=null)) {
+		alert("Please accept the terms");
+		theform.terms.value="";
+		document.contact_form.terms.focus();
+		valid=false;
+	}
+
+	return valid;
+}
+
+
+</script>
+
+</head>
+
+<body >
+
+	<form name="contact_form" method="post" action="thankyou.html" onSubmit="return isready(this);">
+
+		<h1>Please Enter Your Details Below</h1>
+
+		<p>Your Name: <input type="text" name="contact_name"></p>
+
+		<p>Your Gender: 
+		<input type="radio" name="gender" value="Male"> Male
+		<input type="radio" name="gender" value="Female"> Female</p>
+
+		<p>Your Age:
+			<select name="age">
+				<option value="">Please Select an Option:</option>
+				<option value="0-18 years">0-18 years</option>
+				<option value="18-30 years">18-30 years</option>
+				<option value="30-45 years">30-45 years</option>
+				<option value="45-60 years">45-60 years</option>
+				<option value="60+ years">60+ years</option>
+			</select>
+
+		<p>Do you agree to the Terms and Conditions?
+		<input type="checkbox" name="terms" value="Yes"> Yes
+
+		<p><input type="submit" name="send" value="Send Details"></p>
+
+	</form>
+
+</body>
+
+</html>
